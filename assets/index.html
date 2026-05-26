@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deutsche Nachlass Bank - Anmelden</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-zinc-950 text-white min-h-screen flex items-center justify-center overflow-hidden">
+
+  <div class="w-full max-w-md px-6">
+    <!-- Logo & Titre -->
+    <div class="text-center mb-12">
+      <div class="w-24 h-24 mx-auto bg-gradient-to-br from-blue-600 to-blue-500 rounded-3xl flex items-center justify-center text-6xl font-bold shadow-2xl mb-6">
+        DB
+      </div>
+      <h1 class="text-4xl font-semibold tracking-tighter">Deutsche Nachlass Bank</h1>
+      <p class="text-blue-400 mt-2">Sicheres Banking für besondere Fälle</p>
+    </div>
+
+    <!-- Card Login -->
+    <div class="glass rounded-3xl p-10 shadow-2xl">
+      <h2 class="text-2xl font-medium mb-8 text-center">Anmelden</h2>
+      
+      <form id="loginForm" class="space-y-6">
+        <div>
+          <label class="block text-sm text-zinc-400 mb-2">Kunden-ID / Benutzername</label>
+          <input type="text" id="username" value="SCHNEIDER FRIEDA" 
+                 class="w-full bg-zinc-900 border border-zinc-700 focus:border-blue-500 rounded-2xl px-6 py-5 outline-none transition">
+        </div>
+        
+        <div>
+          <label class="block text-sm text-zinc-400 mb-2">PIN / Passwort</label>
+          <input type="password" id="password" value="SCHNEIDER1975" 
+                 class="w-full bg-zinc-900 border border-zinc-700 focus:border-blue-500 rounded-2xl px-6 py-5 outline-none transition">
+        </div>
+
+        <button type="submit" 
+                class="w-full bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 py-5 rounded-2xl text-lg font-semibold transition active:scale-95">
+          Anmelden
+        </button>
+      </form>
+    </div>
+
+    <p class="text-center text-zinc-500 text-xs mt-10">
+      Dies ist eine Demoversion für einen Schulübungszweck.<br>
+      Nicht für reale Bankgeschäfte verwenden.
+    </p>
+  </div>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
